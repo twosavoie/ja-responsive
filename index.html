@@ -31,17 +31,17 @@
 <body>
   <header>
     <div class="content-wrapper">
+      <div class="h1-nav">
+        <h1>Jubilee Austen</h1>
 
-      <h1>Jubilee Austen</h1>
-
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
       <h2><span>Hi,</span> I'm a developer that loves clean &amp; elegant code.</h2>
     </div>
   </header>
@@ -50,70 +50,73 @@
     <section id="about">
       <div class="content-wrapper">
         <h3>A little bit about me.</h3>
+        <div class="content-wrap">
+          <p>I've made my home base in Providence, Rhode Island, with my small growing family. My journey into
+            tech started with a degree in journalism. As I started sharing my writing online, I was
+            fascinated with how easily I could get my voice out there. I was hooked and wanted to learn how
+            to build my own site to fit my own specific needs.</p>
 
-        <p>I've made my home base in Providence, Rhode Island, with my small growing family. My journey into
-          tech started with a degree in journalism. As I started sharing my writing online, I was
-          fascinated with how easily I could get my voice out there. I was hooked and wanted to learn how
-          to build my own site to fit my own specific needs.</p>
 
-
-        <p>That curiosity then opened a door that could never be shut. When I learned how to build my
-          first
-          website, I realized I found something that gave me the freedom &amp; versatility I was
-          looking
-          for in my work. Now I've made a full switch to front-end development, where I can use my
-          organization skills and eye for detail to write clean, elegant code.</p>
-
+          <p>That curiosity then opened a door that could never be shut. When I learned how to build my
+            first
+            website, I realized I found something that gave me the freedom &amp; versatility I was
+            looking
+            for in my work. Now I've made a full switch to front-end development, where I can use my
+            organization skills and eye for detail to write clean, elegant code.</p>
+        </div>
       </div>
     </section>
 
     <section id="work">
       <div class="content-wrapper">
-        <figure class="work-icons">
-          <img src="img/html-icon.png" alt="HTML icon" />
-        </figure>
-        <h4>Hand-Coded HTML</h4>
-        <p>My focus is writing clean, well formatted, semantic HTML5 by hand to make sure that the content
-          is easy to read, easy to collaborate, trouble-shoot and accessible.</p>
-
-        <figure class="work-icons">
-          <img src="img/css-icon.png" alt="CSS icon" />
-        </figure>
-        <h4>Well-Organized CSS</h4>
-        <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean
-          and fast to load, and I make it a habit to stay up to date on current best practices.</p>
-
-        <figure class="work-icons">
-          <img src="img/pencil-icon.png" alt="Pencil icon" />
-        </figure>
-        <h4>Ease Converting Designs into Code</h4>
-        <p>You can trust me to take a designer's PSD and quickly &amp; accurately convert it into a webpage
-          that is pixel-perfect match.</p>
-
+        <div class="work-columns">
+          <figure class="work-icons">
+            <img src="img/html-icon.png" alt="HTML icon" />
+          </figure>
+          <h4>Hand-Coded HTML</h4>
+          <p>My focus is writing clean, well formatted, semantic HTML5 by hand to make sure that the content
+            is easy to read, easy to collaborate, trouble-shoot and accessible.</p>
+        </div>
+        <div class="work-columns">
+          <figure class="work-icons">
+            <img src="img/css-icon.png" alt="CSS icon" />
+          </figure>
+          <h4>Well-Organized CSS</h4>
+          <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean
+            and fast to load, and I make it a habit to stay up to date on current best practices.</p>
+        </div>
+        <div class="work-columns">
+          <figure class="work-icons">
+            <img src="img/pencil-icon.png" alt="Pencil icon" />
+          </figure>
+          <h4>Ease Converting Designs into Code</h4>
+          <p>You can trust me to take a designer's PSD and quickly &amp; accurately convert it into a webpage
+            that is pixel-perfect match.</p>
+        </div>
       </div>
     </section>
 
     <footer id="contact">
       <div class="content-wrapper">
-
-        <img src="img/contact-image.png" id="contact-img" alt="my contact image" />
-
-
-        <h3>Like what you see?</h3>
-        <h4 id="email-header">Let's meet for a cup of coffee.</h4>
-        <a href="mailto:hi@jubileeausten.com">
-          <img src="img/envelope.png" id="envelope" alt="envelope icon" />hi [@]
-          jubileeausten.com
-        </a>
-        <h4 id="socialmedia-header">Or, find me on the interwebs</h4>
-        <ul>
-          <li><a href=""><img src="img/twitter.png" alt="twitter icon" /></a></li>
-          <li><a href=""><img src="img/tumblr.png" alt="tumblr icon" /></a></li>
-          <li><a href=""><img src="img/instagram.png" alt="instagram icon" /></a></li>
-          <li><a href=""><img src="img/linkedin.png" alt="linkedin icon" /></a></li>
-          <li><a href=""><img src="img/github.png" alt="github icon" /></a></li>
-        </ul>
-
+        <div class="wrap">
+          <img src="img/contact-image.png" id="contact-img" alt="my contact image" />
+        </div>
+        <div class="wrap">
+          <h3>Like what you see?</h3>
+          <h4 id="email-header">Let's meet for a cup of coffee.</h4>
+          <a href="mailto:hi@jubileeausten.com">
+            <img src="img/envelope.png" id="envelope" alt="envelope icon" />hi [@]
+            jubileeausten.com
+          </a>
+          <h4 id="socialmedia-header">Or, find me on the interwebs</h4>
+          <ul>
+            <li><a href=""><img src="img/twitter.png" alt="twitter icon" /></a></li>
+            <li><a href=""><img src="img/tumblr.png" alt="tumblr icon" /></a></li>
+            <li><a href=""><img src="img/instagram.png" alt="instagram icon" /></a></li>
+            <li><a href=""><img src="img/linkedin.png" alt="linkedin icon" /></a></li>
+            <li><a href=""><img src="img/github.png" alt="github icon" /></a></li>
+          </ul>
+        </div>
       </div>
     </footer>
 

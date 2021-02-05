@@ -306,6 +306,57 @@ flex-flow: row wrap;
 #contact ul img {
 /*  padding-right: 48px; */
 }
+/* not working yet */
+@media (min-width: 768px) {
+  header .h1-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  header h1 {
+    width: 50%;
+    text-align: left;
+  }
+  nav {
+    width: 50%;
+    margin-top: 10px;
+  }
+  h2 {
+    width: 100%;
+  }
+  #about .content-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  #about p {
+    width: 48%;
+  }
+  #work .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #work .work-columns {
+    width: 28%;
+  }
+  #work .work-columns-2 {
+    width: 100%;
+  }
+  #work figure.work-icons{
+    width: 100%;
+  }
+  #work figure.work-icons img{
+    width: 40%;
+  }
+  #contact .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #contact .wrap {
+    width: 48%;
+  }
+  #contact h3, h4 {
+    margin-top: 0;
+  }
+}
 
 /* ==========================================================================
    Helper classes
