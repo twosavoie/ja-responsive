@@ -222,12 +222,20 @@ header h2 span {
   background-color: #f9ceb7;
   text-align: center;
 }
-
+/* not sure what's going on here */
 #work .content-wrapper {
 /*  padding: 115px 0; */
 display: flex;
 justify-content: center;
 flex-flow: row wrap;
+}
+#work .work-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#work figure.work-icons img{
+  width: 30%;
 }
 
 #work img {
@@ -333,15 +341,21 @@ flex-flow: row wrap;
   #work .content-wrapper {
     display: flex;
     justify-content: space-between;
+    
   }
-  #work .work-columns {
-    width: 28%;
-  }
+  /*#work .work-columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+  } */
+  /* do I need figure? */
   #work figure.work-icons{
     width: 100%;
-  }
+  } 
   #work figure.work-icons img{
     width: 40%;
+    padding-bottom: 20px;
   }
   #contact .content-wrapper {
     display: flex;
