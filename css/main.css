@@ -105,18 +105,9 @@ ul, ol {
 a {
   text-decoration: none;
 }
-h2 {
-
-}
-h3 {
-
-}
 h4 {
   width: 100%;
   margin-bottom: 0;
-}
-p {
-  
 }
 address {
   font-style: normal; 
@@ -146,25 +137,20 @@ footer {
 /****** HEADER ******/
 
 header {
-/*  height: 800px; */
   min-height: 600px;
   background: url('../img/full-background.png');
   background-size: cover;
   background-position: center; 
 }
-
 header h1 {
   font-family: 'Lora', serif;
   font-size: 30px;
   color: #bbc085;
   text-align: center; 
   margin-top: 0;
-/*  padding: 65px 0 65px 25px; */
 }
 nav {
   text-align: center;  
-/*  float: right; */
-/*  padding: 75px 25px; */
 }
 header nav ul {
   display: flex;
@@ -178,18 +164,12 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   color: #828282;
-/*  padding-left: 80px; */
 }
 header h2 {
-/*  width: 1000px; */
-/*  clear: both; */
   font-family: 'Lora', serif;
-/*  font-size: 72px; 4.5em */
   font-size: 2.25em;
-/*  line-height: 80px; */
   line-height: 1.2;
   color: #9b9b9b;
-/*  padding: 20px 0 20px 25px; */
 }
 header h2 span {
   color: #2b2b2b;
@@ -198,22 +178,16 @@ header h2 span {
 /****** ABOUT ******/
 
 #about .content-wrapper {
-/*  padding: 80px 0; */
 } 
-
 #about h3 {
   font-family: 'Lora', serif;
-/*  font-size: 36px; */
   font-size: 2em;
   margin-bottom: 0;
-/*  padding-left: 50px; */
 }
 #about p {
   font-size: 21px;
   color: #7f7f7f;
   line-height: 40px;
-/*  padding-left: 50px;
-  padding-right: 50px; */
 }
 
 /****** WORK ******/
@@ -222,39 +196,25 @@ header h2 span {
   background-color: #f9ceb7;
   text-align: center;
 }
-/* not sure what's going on here */
 #work .content-wrapper {
-/*  padding: 115px 0; */
 display: flex;
 justify-content: center;
 flex-flow: row wrap;
 }
 #work .work-columns {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
 }
-#work figure.work-icons img{
-  width: 30%;
-}
-
-#work img {
-/*  padding-bottom: 30px; */
-}
-
 #work h4 {
   font-size: 24px;
   line-height: 32px;
-/*  width: 190px;
-  margin: 0 auto; */
 }
-
 #work p {
   font-family: 'Lora', serif;
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 40px;
-/*  padding: 0 50px; */
 }
 
 /****** CONTACT ******/
@@ -262,47 +222,32 @@ flex-flow: row wrap;
 #contact {
   background-color: #ebebeb;
 }
-#contact .full-width {
-/*  padding: 110px 0; */
-}
 #contact img#contact-img {
-/*  margin-left: 25px; */
   outline: 12px solid #ffffff;
 }
-#contact h3, #contact #email-header, #contact #socialmedia-header, #contact ul {
-/*  padding-left: 115px; */
-}
 #contact #envelope {
-/*  padding: 0 10px 0 115px; */
   width: 10%;
 }
 #contact h3 {
   font-family: 'Lora', serif;
-/*  font-size: 36px; */
   font-size: 2em;
   line-height: 44px;
   margin-bottom: 0;
 }
 #contact #email-header{
- /* font-size: 32px; */
   font-size: 1.5em;
   font-weight: 400;
   line-height: 44px;
-/*  margin: -30px 0 5px 0; */
 }
 #contact #socialmedia-header {
   font-weight: bold;
-/*  font-size: 29px; */
   font-size: 1.5em;
   line-height: 44px;
-/*  margin: 40px 0 0 0; */
 }
 #contact a {
   text-decoration: none;
   color: #c49075;
-  font-weight: bold;
-/*  font-size: 28px; */
-  
+  font-weight: bold;  
   font-size: 1.2em;
 }
 #contact ul {
@@ -310,9 +255,6 @@ flex-flow: row wrap;
 }
 #contact ul li {
    display: inline-block;
-}
-#contact ul img {
-/*  padding-right: 48px; */
 }
 
 @media (min-width: 768px) {
@@ -328,7 +270,8 @@ flex-flow: row wrap;
     width: 50%;
     margin-top: 10px;
   }
-  h2 {
+  header h2 {
+    font-size: 3em;
     width: 100%;
   }
   #about .content-wrap {
@@ -338,24 +281,24 @@ flex-flow: row wrap;
   #about p {
     width: 48%;
   }
+  #work, #contact {
+    padding: 50px 0;
+  }
   #work .content-wrapper {
     display: flex;
     justify-content: space-between;
     
   }
-  /*#work .work-columns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-  } */
-  /* do I need figure? */
+  #work .work-columns {
+    display: block;
+    width: 28%;
+   }
   #work figure.work-icons{
     width: 100%;
   } 
   #work figure.work-icons img{
     width: 40%;
-    padding-bottom: 20px;
+    padding-bottom: 30px; 
   }
   #contact .content-wrapper {
     display: flex;
@@ -377,7 +320,7 @@ flex-flow: row wrap;
   }
   header h2 {
     font-size: 4.5em;
-    width: 1000px;
+    width: 100%;
   }
   #about {
     padding: 40px 0;
@@ -396,9 +339,6 @@ flex-flow: row wrap;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #work img {
-    padding-bottom: 30px;
   }
   #work figure.work-icons img{
     width: 30%;
